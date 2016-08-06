@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="author" content="Andreas Niehues"/>
     <title>Andreas Niehues - Systemisch integrative Praxis für Paar- und Familientherapie, Coaching und psychologische Beratung, Sexualberatung und Sexualpädagogik</title>
-    <link rel="stylesheet" href="https://niehues-assets.github.io/css/main-a0cb13e724.css"/>
+    <link rel="stylesheet" href="https://niehues-assets.github.io/css/main-cc46c92707.css"/>
     <script src="https://niehues-assets.github.io/vendor/picturefill.min.js"></script>
   </head>
   <body class="production-environment" id="top">
@@ -164,7 +164,7 @@ Die Anbindung an die umliegenden Städte ist ideal, die A40 ist 5 Fahrminuten un
           <p class="name">Systemisch-integrative Praxis</p>
           <p class="street">Planckstraße 115</p>
           <p class="city">45147 Essen-Holsterhausen</p>
-          <h3>Telefon</h3><a class="tellink" href="tel:020112345567889">0201-12345567889</a>
+          <h3>Telefon</h3><a class="tellink" href="tel:020112345567889">0201-12345567889</a><br/><br/><a class="map-link">Anfahrt</a>
         </address>
       </div>
     </section>
@@ -277,6 +277,19 @@ Die Anbindung an die umliegenden Städte ist ideal, die A40 ist 5 Fahrminuten un
         $('.scroll-indicator').css('opacity', Math.max(0, position));
         $('.scroll-menu').css('opacity', Math.min(1, 1 - position));
       
+      });
+      
+      $('.map-link').on('click', function(e) {
+        e.preventDefault();
+      
+        if ((navigator.platform.indexOf("iPhone") != -1)
+          || (navigator.platform.indexOf("iPod") != -1)
+          || (navigator.platform.indexOf("iPad") != -1)
+          || (navigator.platform.indexOf("MacIntel") != -1)) {
+         window.open("maps://maps.google.com/maps?daddr=Planckstra%C3%9Fe+115,+45147+Essen&amp;ll=");
+       } else {
+         window.open("http://maps.google.com/maps?daddr=Planckstra%C3%9Fe+115,+45147+Essen&amp;ll=");
+       }
       });
     </script>
   </body>
