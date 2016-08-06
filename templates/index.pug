@@ -1,0 +1,8 @@
+extends /organisation_layout
+include /helper
+
+block content
+  .area
+    include:markdown-it landing-page/org_intro.md
+
+  +teaser-list(['couples', 'single', 'family'])
