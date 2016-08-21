@@ -231,6 +231,7 @@ Die Anbindung an die umliegenden Städte ist ideal, die A40 ist 5 Fahrminuten un
             return;
           }
       
+          target.addClass('disabled')
           inputs.attr('disabled', 'disabled');
       
           $.ajax({
@@ -245,8 +246,11 @@ Die Anbindung an die umliegenden Städte ist ideal, die A40 ist 5 Fahrminuten un
               validationMessage.hide();
               target.find('.error-message').hide();
               target.find('.success-message').show();
+              target.removeClass('disabled')
             },
             error: function() {
+              inputs.attr('disabled', false);
+              target.removeClass('disabled')
               target.find('.success-message').hide();
               validationMessage.hide();
               target.find('.error-message').show();
