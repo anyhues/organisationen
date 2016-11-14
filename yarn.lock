@@ -2921,8 +2921,8 @@ negotiator@0.6.1:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
 niehues-assets:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/niehues-assets/-/niehues-assets-0.0.2.tgz#1cafa4844765d809e172a18c35e8f947c6095138"
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/niehues-assets/-/niehues-assets-0.0.4.tgz#6df641a6e631b0cc6a41da16875e62560197e021"
   dependencies:
     convict "^1.4.0"
     del "^2.2.1"
