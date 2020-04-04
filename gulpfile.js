@@ -5,7 +5,7 @@ const print = require('gulp-print')
 const sequence = require('gulp-sequence')
 const ghPages = require('gulp-gh-pages')
 
-const assets = require('niehues-assets')
+const assets = require('niehues-assets-dup')
 
 const config = require('./lib/config')
 config.load(assets.configs[config.get('env')])
